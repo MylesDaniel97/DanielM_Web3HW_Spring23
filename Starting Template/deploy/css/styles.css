@@ -678,25 +678,36 @@ textarea {
 
 #hero {
   display: grid;
-  grid-template-columns: 325px;
+  grid-template-columns: 1fr;
+  background-color: aqua;
 }
 
 #header {
   display: grid;
+  grid-template-columns: 235px;
+  background-color: rgb(51, 198, 40);
 }
 
 #head {
   display: grid;
+  grid-template-columns: 235px;
+  background-color: rgb(185, 119, 19);
 }
 
 #gallery {
   display: grid;
+  grid-template-columns: 235px;
+  background-color: rgb(91, 16, 205);
 }
 
 #footer {
   display: grid;
+  grid-template-columns: 235px;
+  background-color: rgb(180, 19, 94);
 }
 
 #what_is_new {
   display: grid;
+  grid-template-columns: 235px;
+  background-color: rgb(169, 221, 13);
 }
