@@ -681,6 +681,14 @@ textarea {
   grid-template-columns: 1fr;
   background-color: aqua;
 }
+#hero aside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#hero aside div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 #header {
   display: grid;

@@ -3,6 +3,16 @@
 
     grid-template-columns: 1fr;
     background-color: aqua;
+    aside{
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        div{
+            display: grid;
+
+            grid-template-columns: 1fr;
+        }
+    }
 
 
 
