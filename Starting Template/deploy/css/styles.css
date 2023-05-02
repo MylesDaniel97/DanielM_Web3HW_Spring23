@@ -689,10 +689,23 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
 }
+@media (min-width: 768px) {
+  #hero {
+    grid-template-columns: 1fr 1fr;
+  }
+  #hero aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #hero aside div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 
 #header {
   display: grid;
-  grid-template-columns: 235px;
+  grid-template-columns: 1fr;
   background-color: rgb(51, 198, 40);
 }
 

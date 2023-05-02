@@ -13,7 +13,18 @@
             grid-template-columns: 1fr;
         }
     }
+    @include md{
+    grid-template-columns: 1fr 1fr;
+        aside{
+            display: grid;
 
+            grid-template-columns: 1fr 1fr;
+            div{
+                display: grid;
 
+                grid-template-columns: 1fr;
+                }
+            }
 
+        }
 }
