@@ -8,8 +8,7 @@
         &.subhero{
             display: grid;
             grid-template-columns: 1fr;
-        }
-    }
+
             aside{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -31,43 +30,45 @@
                 }
                 div{
                     display: grid;
-
                     grid-template-columns: 1fr;
                 }
             }
-    @include md{
-    article{
-        display: grid;
-        grid-template-columns: 1fr;
-        &.subhero{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
         }
     }
-            aside{
+            
+    
+
+    @include md{
+        article{
+            display: grid;
+            grid-template-columns: 1fr;
+            &.subhero{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                background-color: #ECC375;
-                &.left{
-                    background-color: #D86121;
-                }
-                
-                &.right{
-                    background-color: #FA7025;
-                }
-                &.bottom-left{
-                    margin: 16px;
-                }
-                &.bottom-right{
-                    margin: 16px;
-                }
-                div{
+                aside{
                     display: grid;
-
-                    grid-template-columns: 1fr;
+                    grid-template-columns: 1fr 1fr;
+                    background-color: #ECC375;
+                    &.left{
+                        background-color: #D86121;
+                    }
+                
+                    &.right{
+                        background-color: #FA7025;
+                    }
+                    &.bottom-left{
+                        margin: 16px;
+                    }
+                    &.bottom-right{
+                        margin: 16px;
+                    }
+                    div{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                    }
                 }
             }
-
+        }
        
     } 
 

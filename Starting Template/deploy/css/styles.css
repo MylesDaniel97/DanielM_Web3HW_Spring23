@@ -1,11 +1,6 @@
 /* =============
     Mixins
 ============= */
-/* ---------------- Font Sizing ---------------- */
-html {
-  font-size: 100%;
-}
-
 /* ---------------- Media Queries ---------------- */
 /* =============
     Variables
@@ -427,18 +422,18 @@ textarea {
 }
 #section-1 .grid-content div {
   display: flex;
-  font-size: 1.875rem;
+  font-size: rem-calc(30);
   justify-content: center;
 }
 #section-1 .grid-content div i {
-  font-size: 3.125rem;
+  font-size: rem-calc(50);
 }
 #section-1 .grid-content div p {
   margin: 10px 10px;
 }
 #section-1 .grid-content h1 {
   color: #fff;
-  font-size: 2.8125rem;
+  font-size: rem-calc(45);
   font-weight: 300;
   margin-top: 20px;
 }
@@ -499,7 +494,7 @@ textarea {
   padding: 10px;
 }
 #section-2 #file-structure section ul li h2 {
-  font-size: 1rem;
+  font-size: rem-calc(16);
   font-weight: 300;
   margin-left: 10px;
 }
@@ -522,7 +517,7 @@ textarea {
   margin-bottom: 10px;
 }
 #section-3 #root-title-container h1 span {
-  font-size: 1.25rem;
+  font-size: rem-calc(20);
 }
 #section-3 article {
   display: grid;
@@ -546,7 +541,7 @@ textarea {
   padding-top: 20px;
 }
 #section-3 article > section div section i {
-  font-size: 1.875rem;
+  font-size: rem-calc(30);
 }
 #section-3 article > section div section h2 {
   font-weight: 400;
@@ -631,7 +626,7 @@ textarea {
   color: #56c4cf;
 }
 #section-4 #kit-vs-index .kit-title-container p {
-  font-size: 0.875rem;
+  font-size: rem-calc(14);
   font-weight: 300;
 }
 #section-4 #kit-vs-index article section {
@@ -641,7 +636,7 @@ textarea {
   padding: 10px 0;
 }
 #section-4 #kit-vs-index article section p {
-  font-size: 0.875rem;
+  font-size: rem-calc(14);
 }
 #section-4 #kit-vs-index article section .folder-container {
   display: flex;
@@ -651,12 +646,12 @@ textarea {
   display: flex;
 }
 #section-4 #kit-vs-index article section .folder-container div i {
-  font-size: 1.5625rem;
+  font-size: rem-calc(25);
   margin-right: 10px;
   padding: 0;
 }
 #section-4 #kit-vs-index article section .folder-container div h2 {
-  font-size: 1.25rem;
+  font-size: rem-calc(20);
   font-weight: 400;
 }
 #section-4 #kit-vs-index article section .folder-container i {
@@ -673,7 +668,7 @@ textarea {
   border-radius: 100px;
   color: #56c4cf;
   display: flex;
-  font-size: 2.8125rem;
+  font-size: rem-calc(45);
   height: 100px;
   justify-content: center;
   margin: 0 auto;
@@ -692,25 +687,25 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
 }
-#hero aside {
+#hero article.subhero aside {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #ECC375;
   padding: 16px;
 }
-#hero aside.left {
+#hero article.subhero aside.left {
   background-color: #D86121;
 }
-#hero aside.right {
+#hero article.subhero aside.right {
   background-color: #FA7025;
 }
-#hero aside.bottom-left {
+#hero article.subhero aside.bottom-left {
   margin: 16px 0px 8px;
 }
-#hero aside.bottom-right {
+#hero article.subhero aside.bottom-right {
   margin: 16px 0px 8px;
 }
-#hero aside div {
+#hero article.subhero aside div {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -723,24 +718,24 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  #hero aside {
+  #hero article.subhero aside {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #ECC375;
   }
-  #hero aside.left {
+  #hero article.subhero aside.left {
     background-color: #D86121;
   }
-  #hero aside.right {
+  #hero article.subhero aside.right {
     background-color: #FA7025;
   }
-  #hero aside.bottom-left {
+  #hero article.subhero aside.bottom-left {
     margin: 16px;
   }
-  #hero aside.bottom-right {
+  #hero article.subhero aside.bottom-right {
     margin: 16px;
   }
-  #hero aside div {
+  #hero article.subhero aside div {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -748,13 +743,52 @@ textarea {
 
 #header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
-
-#head {
-  display: grid;
-  grid-template-columns: 235px;
-  background-color: rgb(185, 119, 19);
+#header nav {
+  background-color: #8D4E2C;
+  padding: 24px;
+  display: flex;
+}
+#header nav img {
+  width: 68px;
+}
+#header nav div {
+  display: none;
+}
+@media (min-width: 768px) {
+  #header nav div {
+    display: inline;
+    padding-left: 17px;
+  }
+}
+#header nav h1, #header nav h6 {
+  margin: 0;
+  color: white;
+}
+#header section {
+  padding: 24px;
+}
+#header section form#search {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 10px;
+}
+#header section form#search input {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+#header section form#search button {
+  background-color: #FA7025;
+  border-radius: 3.5px;
+  padding: 6px 11px;
+  border: none;
+}
+#header section form#search button img {
+  width: 43px;
 }
 
 #gallery {

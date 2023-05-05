@@ -47,7 +47,7 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/luxury_car_front.jpeg" : {
+    "\/deploy\/img\/Luxury_Car_Front.jpeg" : {
       "ft" : 16384,
       "iS" : 595654,
       "jF" : 0,
@@ -73,7 +73,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/luxury_Car_Top.jpg" : {
+    "\/deploy\/img\/Luxury_Car_Top.jpg" : {
       "ft" : 16384,
       "iS" : 181923,
       "jF" : 0,
@@ -473,21 +473,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_gallery.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_head.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_head.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

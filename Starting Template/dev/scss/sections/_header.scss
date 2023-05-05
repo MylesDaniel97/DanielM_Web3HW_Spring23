@@ -1,6 +1,57 @@
 #header{
     display: grid;
+    grid-template-columns: 1fr;
+    nav{
+        background-color: #8D4E2C;
+        padding: 24px;
+        display: flex;
+        img{
+            width: 68px;
+        }
 
-    grid-template-columns: 1fr 1fr;
+        div{
+            display:none;
+            @include md{
+                display: inline;
+                padding-left: 17px;
+
+            }
+        }
+
+        h1, h6{
+            margin: 0;
+            color: white;
+        }
+    }
+    section{
+        padding:24px;
+        
+        form#search{
+            display: flex;
+            width: 100%;
+            align-items: stretch;
+            justify-content: space-between;
+            gap: 10px;
+
+            input{
+                border: none;
+                width: 100%;
+                border-bottom: 1px solid ;
+
+
+            }
+            button{
+                background-color: #FA7025;
+                border-radius: 3.5px;
+                padding: 6px 11px;
+                border: none;
+                img{
+                    width: 43px;
+                }
+
+            }
+        }
+
+    }
     
 }
