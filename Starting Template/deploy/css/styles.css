@@ -692,18 +692,46 @@ textarea {
   grid-template-columns: 1fr 1fr;
   background-color: #ECC375;
   padding: 16px;
+  align-items: stretch;
+  justify-content: right;
+}
+#hero article.subhero aside button {
+  background-color: #FA7025;
+  border: none;
+  padding: 10px 12px;
+  width: 100%;
 }
 #hero article.subhero aside.left {
   background-color: #D86121;
 }
+#hero article.subhero aside.left a {
+  margin: auto;
+}
 #hero article.subhero aside.right {
   background-color: #FA7025;
+}
+#hero article.subhero aside.right a {
+  margin: auto;
 }
 #hero article.subhero aside.bottom-left {
   margin: 16px 0px 8px;
 }
+#hero article.subhero aside.bottom-left img {
+  width: 63px;
+  margin: auto;
+  padding: 15px;
+  border: 5px solid white;
+  border-radius: 100%;
+  background-color: #8D4E2C;
+}
 #hero article.subhero aside.bottom-right {
   margin: 16px 0px 8px;
+}
+#hero article.subhero aside.bottom-right img {
+  width: 85px;
+  margin: auto;
+  border: 5px solid white;
+  border-radius: 100%;
 }
 #hero article.subhero aside div {
   display: grid;
@@ -793,8 +821,19 @@ textarea {
 
 #gallery {
   display: grid;
-  grid-template-columns: 235px;
-  background-color: rgb(91, 16, 205);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  #gallery {
+    display: flex;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #gallery {
+    display: flex;
+    width: 75%;
+  }
 }
 
 #footer {
@@ -805,6 +844,50 @@ textarea {
 
 #what_is_new {
   display: grid;
-  grid-template-columns: 235px;
-  background-color: rgb(169, 221, 13);
+  grid-template-columns: 1fr;
+}
+#what_is_new h1 {
+  margin: 16px;
+}
+#what_is_new ul {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  #what_is_new ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #what_is_new ul li {
+    margin: 16px;
+  }
+  #what_is_new ul li img {
+    height: 184px;
+  }
+}
+@media (min-width: 992px) {
+  #what_is_new ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #what_is_new ul li {
+    margin: 16px;
+  }
+  #what_is_new ul li img {
+    height: 164px;
+  }
+}
+#what_is_new ul li {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #F8F9FA;
+  margin-bottom: 16px;
+}
+#what_is_new ul li div {
+  margin: 16px;
+}
+#what_is_new ul li div button {
+  background-color: #FA7025;
+  border: none;
+  padding: 3px 12px 3px;
 }

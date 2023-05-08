@@ -1,5 +1,15 @@
 #gallery{
     display: grid;
-    grid-template-columns: 235px;
-    background-color: rgb(91, 16, 205);
+    grid-template-columns: 1fr;
+    
+    @include md{
+        display: flex;
+        width: 50%;
+        
+    }
+    @include lg{
+        display: flex;
+        width: 75%;
+    }
+    
 }

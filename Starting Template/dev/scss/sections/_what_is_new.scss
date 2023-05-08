@@ -1,5 +1,56 @@
 #what_is_new{
     display: grid;
-    grid-template-columns: 235px;
-    background-color: rgb(169, 221, 13);
+    grid-template-columns: 1fr;
+    
+
+    h1{
+        margin: 16px;
+
+    }
+    ul{
+        display:grid;
+        grid-template-columns: 1fr;
+        @include md{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            li{
+                margin: 16px;
+                img{
+                    height: 184px;
+                }
+            }
+            
+            
+        }
+        @include lg{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            li{
+                margin: 16px;
+                img{
+                    height: 164px;
+                }
+            }
+             
+            
+        }
+        li{
+            display: grid;
+            grid-template-columns: 1fr;
+            background-color: #F8F9FA;
+            margin-bottom: 16px;
+            div{
+                margin:16px;
+                button{
+                    background-color: #FA7025;
+                    border: none;
+                    padding: 3px 12px 3px;
+                }
+            }
+            
+
+        }
+    }
+    
+    
 }
