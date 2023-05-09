@@ -838,8 +838,42 @@ textarea {
 
 #footer {
   display: grid;
-  grid-template-columns: 235px;
-  background-color: rgb(180, 19, 94);
+  grid-template-columns: 1fr;
+  background-color: #8D4E2C;
+}
+#footer section#newsletter form#email {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+#footer section#newsletter form#email input {
+  background-color: #ECC375;
+  border: none;
+  width: 100%;
+}
+#footer section#newsletter form#email button {
+  background-color: #FA7025;
+  border-radius: 3.5px;
+  padding: 6px 11px;
+  border: none;
+}
+@media (min-width: 768px) {
+  #footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #footer #socials li {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  #footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #footer #socials li {
+    display: flex;
+  }
 }
 
 #what_is_new {

@@ -1,5 +1,46 @@
 #footer{
     display: grid;
-    grid-template-columns: 235px;
-    background-color: rgb(180, 19, 94);
+    grid-template-columns: 1fr;
+    background-color: #8D4E2C;
+
+    section#newsletter{
+        form#email{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+
+            input{
+                background-color: #ECC375;
+                border: none;
+                width: 100%;
+
+            }
+            button{
+                background-color: #FA7025;
+                border-radius: 3.5px;
+                padding: 6px 11px;
+                border: none;
+            }
+        }
+    }
+    @include md{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        #socials{
+            li{
+                display:flex; 
+            }
+            
+        }
+    }
+    @include lg{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        #socials{
+            li{
+                display:flex;
+            }
+            
+        }
+    }
 }
