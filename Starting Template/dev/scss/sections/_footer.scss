@@ -2,20 +2,34 @@
     display: grid;
     grid-template-columns: 1fr;
     background-color: #8D4E2C;
-
-    section#newsletter{
-        form#email{
-            display: grid;
-            grid-template-columns: 1fr;
-            width: 100%;
-
+    
+    section{
+        margin:16px;
+        h1{
+            color:white;
+        }
+        &.locations{
+            
+            li{
+                color:white;
+                margin-top:16px;
+                margin-bottom:16px;
+            }
+        }
+    
+        &.newsletter{
+    
+    
             input{
                 background-color: #ECC375;
                 border: none;
-                width: 100%;
-
+                width: auto;
+                padding:15px 14px 16px 10px;
+                margin-bottom:16px;
+                margin-right: 16px;
             }
             button{
+                justify-content: right;
                 background-color: #FA7025;
                 border-radius: 3.5px;
                 padding: 6px 11px;
@@ -23,6 +37,7 @@
             }
         }
     }
+    
     @include md{
         display: grid;
         grid-template-columns: 1fr 1fr;
