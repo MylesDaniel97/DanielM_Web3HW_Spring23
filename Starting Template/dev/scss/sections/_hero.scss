@@ -1,6 +1,7 @@
 #hero{
     display: grid;
     grid-template-columns: 1fr;
+    
 
     article{
         display: grid;
@@ -27,6 +28,7 @@
                 
                 &.left{
                     background-color: #D86121;
+                    margin-top: 0px;
                     a{
                         margin: auto;
                     }
@@ -34,6 +36,7 @@
                 
                 &.right{
                     background-color: #FA7025;
+                    margin-top: 0px;
                     a{
                         margin: auto;
                     }

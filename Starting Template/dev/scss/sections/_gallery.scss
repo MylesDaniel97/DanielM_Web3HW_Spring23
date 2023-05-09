@@ -3,13 +3,11 @@
     grid-template-columns: 1fr;
     
     @include md{
-        display: flex;
-        width: 50%;
+        grid-template-columns: 1fr 1fr;
         
     }
     @include lg{
-        display: flex;
-        width: 75%;
+        
     }
     
 }

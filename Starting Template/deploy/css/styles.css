@@ -703,12 +703,14 @@ textarea {
 }
 #hero article.subhero aside.left {
   background-color: #D86121;
+  margin-top: 0px;
 }
 #hero article.subhero aside.left a {
   margin: auto;
 }
 #hero article.subhero aside.right {
   background-color: #FA7025;
+  margin-top: 0px;
 }
 #hero article.subhero aside.right a {
   margin: auto;
@@ -825,17 +827,9 @@ textarea {
 }
 @media (min-width: 768px) {
   #gallery {
-    display: flex;
-    width: 50%;
+    grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 992px) {
-  #gallery {
-    display: flex;
-    width: 75%;
-  }
-}
-
 #footer {
   display: grid;
   grid-template-columns: 1fr;
@@ -851,6 +845,11 @@ textarea {
   color: white;
   margin-top: 16px;
   margin-bottom: 16px;
+}
+#footer section.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 #footer section.newsletter input {
   background-color: #ECC375;
