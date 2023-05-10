@@ -1,13 +1,71 @@
 #gallery{
     display: grid;
     grid-template-columns: 1fr;
-    
-    @include md{
-        grid-template-columns: 1fr 1fr;
+    ul{
+        list-style: none;
+        padding:0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "imgone"
+        "imgtwo"
+        "imgthree";
+
+        .imgone{
+            height: 486px;
+            grid-area: imgone;
+            background-image: url(../img/luxury_car_front.jpeg);
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: center center;
+
+        }
+        .imgtwo{
+            height: 486px;
+            grid-area: imgtwo;
+            background-image: url(../img/luxury_Car_Top.jpg);
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: center center;
+
+        }
+        .imgthree{
+            height: 486px;
+            display: none;
+            grid-area: imgthree;
+            background-image: url(../img/truck_front.jpeg);
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        @include md{
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "imgone imgtwo";
+
+            .imgone, .imgtwo{
+                height: 900px;
+            }
         
-    }
-    @include lg{
-        
-    }
-    
+
+        }
+        @include lg{
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas:
+            "imgone imgtwo"
+            "imgone imgthree";
+
+            .imgone{
+                height: auto;
+            }
+            .imgtwo,.imgthree{
+                display: inline;
+                height: 375px;
+            }
+        }      
+    }           
 }
+        
+
+    
