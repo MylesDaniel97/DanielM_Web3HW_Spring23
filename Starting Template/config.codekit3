@@ -21,11 +21,50 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/facebook_icon.png" : {
+      "ft" : 32768,
+      "iS" : 869,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/facebook_icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/grad_cap.png" : {
       "ft" : 32768,
       "iS" : 8151,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/grad_cap.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/insta_icon.png" : {
+      "ft" : 32768,
+      "iS" : 1885,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/insta_icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/location_icon.png" : {
+      "ft" : 32768,
+      "iS" : 1326,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/location_icon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -47,7 +86,7 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/luxury_car_front.jpeg" : {
+    "\/deploy\/img\/Luxury_Car_Front.jpeg" : {
       "ft" : 16384,
       "iS" : 595654,
       "jF" : 0,
@@ -73,7 +112,7 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/luxury_Car_Top.jpg" : {
+    "\/deploy\/img\/Luxury_Car_Top.jpg" : {
       "ft" : 16384,
       "iS" : 181923,
       "jF" : 0,
@@ -138,6 +177,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/phone_icon.png" : {
+      "ft" : 32768,
+      "iS" : 792,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/phone_icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/search_icon.png" : {
       "ft" : 32768,
       "iS" : 12456,
@@ -188,6 +240,32 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/twitter_icon.png" : {
+      "ft" : 32768,
+      "iS" : 1435,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/twitter_icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/youtube_icon.png" : {
+      "ft" : 32768,
+      "iS" : 1158,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/youtube_icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/deploy\/index.html" : {

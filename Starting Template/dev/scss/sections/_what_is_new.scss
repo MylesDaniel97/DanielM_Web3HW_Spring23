@@ -8,49 +8,70 @@
 
     }
     ul{
-        display:grid;
-        grid-template-columns: 1fr;
-        @include md{
-            display:grid;
-            grid-template-columns: 1fr 1fr;
-            li{
-                margin: 16px;
-                img{
-                    height: 184px;
-                }
-            }
-            
-            
-        }
-        @include lg{
-            display:grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            li{
-                margin: 16px;
-                img{
-                    height: 164px;
-                }
-            }
-             
-            
-        }
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        flex-basis: 50%;
         li{
             display: grid;
             grid-template-columns: 1fr;
-            background-color: #F8F9FA;
-            margin-bottom: 16px;
+            background-color: #ECC375;
             div{
-                margin:16px;
+                padding: 20px;
+                margin-bottom:16px;
                 button{
                     background-color: #FA7025;
                     border: none;
                     padding: 3px 12px 3px;
                 }
             }
-            
+            figure{
+                margin: 0;
+                overflow: hidden;
+                height:185px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
+            }
+            
         }
+        
+    } 
+    @include md{
+        ul{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: space-between;
+            li{
+                width:48%;
+            }
+            li:last-child{
+                margin: 0 auto;
+           }
+        }
+        
     }
-    
-    
-}
+    @include lg{
+        ul{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            li{
+                width:31%;
+            }
+            li:last-child{
+                margin: 0;
+           }
+        }
+        
+    }
+        
+} 

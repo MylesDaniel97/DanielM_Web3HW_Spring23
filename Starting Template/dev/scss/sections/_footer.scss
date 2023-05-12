@@ -14,7 +14,40 @@
                 color:white;
                 margin-top:16px;
                 margin-bottom:16px;
+                article{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: left;
+                    margin: 16px 0;
+                    gap: 16px;
+                    div{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        gap: 16px;
+
+                        img{
+                            width: 21px;
+                            height: 21px;
+                        }
+                        img:last-child{
+                            width: 16px;
+                            height: 25px;
+                        }
+                    }
+                }
+                
             }
+            li:first-child{    
+                border-bottom: 1px solid white ;
+                padding:23px 0;
+            }
+            li:nth-child(2){    
+                border-bottom: 1px solid white ;
+                padding:23px 0;
+            }
+
         }
     
         &.newsletter{
@@ -38,28 +71,31 @@
                     padding: 6px 11px;
                     border: none;
                 }
-
-    
         }
+        &.socials{
+            img{
+                width:23px;
+                height: 23px;
+            }
+        }
+                   
     }
+    
     
     @include md{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        #socials{
-            li{
-                display:flex; 
-            }
+        section.socials{
+            display: flex;
+
             
         }
     }
     @include lg{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        #socials{
-            li{
-                display:flex;
-            }
+        section.socials{
+            display: flex;
             
         }
     }
