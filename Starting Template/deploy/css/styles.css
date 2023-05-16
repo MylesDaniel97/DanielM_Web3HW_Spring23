@@ -773,6 +773,9 @@ textarea {
   background-color: #ECC375;
   padding: 16px;
 }
+#hero article.subhero aside span.hide-mobile {
+  display: none;
+}
 #hero article.subhero aside button {
   background-color: #FA7025;
   border: none;
@@ -836,6 +839,9 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #ECC375;
+  }
+  #hero article.subhero aside span.hide-mobile {
+    display: inline;
   }
   #hero article.subhero aside.left {
     background-color: #D86121;

@@ -15,7 +15,9 @@
                 grid-template-columns: 1fr 1fr;
                 background-color: #ECC375;
                 padding: 16px;
-                
+                span.hide-mobile{
+                    display: none;
+                }
                 
                 button{
                     background-color: #FA7025;
@@ -88,6 +90,9 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     background-color: #ECC375;
+                    span.hide-mobile{
+                        display: inline;
+                    }
                     &.left{
                         background-color: #D86121;
                     }
