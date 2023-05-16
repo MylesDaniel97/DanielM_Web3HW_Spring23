@@ -5,8 +5,9 @@
     
     section{
         margin:16px;
-        h1{
+        h4{
             color:white;
+            margin: 0;
         }
         &.locations{
             
@@ -21,6 +22,7 @@
                     justify-content: left;
                     margin: 16px 0;
                     gap: 16px;
+                    color: #C8C7BC;
                     div{
                         display: flex;
                         flex-direction: row;
@@ -41,11 +43,11 @@
             }
             li:first-child{    
                 border-bottom: 1px solid white ;
-                padding:23px 0;
+                padding:0 0 23px 0;
             }
             li:nth-child(2){    
                 border-bottom: 1px solid white ;
-                padding:23px 0;
+                padding: 0 0 23px 0;
             }
 
         }
@@ -73,6 +75,10 @@
                 }
         }
         &.socials{
+            article{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
             img{
                 width:23px;
                 height: 23px;
@@ -86,7 +92,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         section.socials{
-            display: flex;
+            article{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
 
             
         }
@@ -95,7 +104,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         section.socials{
-            display: flex;
+            article{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
             
         }
     }

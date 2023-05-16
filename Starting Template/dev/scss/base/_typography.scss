@@ -18,3 +18,68 @@ p{
 .section-title{
     font-weight: 300;
 }
+h1{
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    @include md{
+        font-size: 29px;
+        line-height: 25px;
+    }
+    @include lg{
+        font-size: 31px;
+        line-height: 29px;
+    }
+}
+h2{
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 30px;
+}
+h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    @include lg{
+        font-size: 25px;
+        line-height: 20px;
+    }
+}
+h4{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+}
+h5{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+h6{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.016px;
+    line-height: 12px;
+    @include lg{
+        font-size: 12.88px;
+        line-height: 18px;
+    }
+}
+p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}

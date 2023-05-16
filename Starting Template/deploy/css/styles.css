@@ -369,6 +369,86 @@ p {
   font-weight: 300;
 }
 
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 29px;
+    line-height: 25px;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 31px;
+    line-height: 29px;
+  }
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+@media (min-width: 992px) {
+  h3 {
+    font-size: 25px;
+    line-height: 20px;
+  }
+}
+
+h4 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+h5 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+h6 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.016px;
+  line-height: 12px;
+}
+@media (min-width: 992px) {
+  h6 {
+    font-size: 12.88px;
+    line-height: 18px;
+  }
+}
+
+p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 /* =============
     Buttons
 ============= */
@@ -703,12 +783,18 @@ textarea {
   background-color: #D86121;
   margin-top: 0px;
 }
+#hero article.subhero aside.left h5 {
+  margin: 0;
+}
 #hero article.subhero aside.left a {
   margin: auto;
 }
 #hero article.subhero aside.right {
   background-color: #FA7025;
   margin-top: 0px;
+}
+#hero article.subhero aside.right h5 {
+  margin: 0;
 }
 #hero article.subhero aside.right a {
   margin: auto;
@@ -887,8 +973,9 @@ textarea {
 #footer section {
   margin: 16px;
 }
-#footer section h1 {
+#footer section h4 {
   color: white;
+  margin: 0;
 }
 #footer section.locations li {
   color: white;
@@ -902,6 +989,7 @@ textarea {
   justify-content: left;
   margin: 16px 0;
   gap: 16px;
+  color: #C8C7BC;
 }
 #footer section.locations li article div {
   display: flex;
@@ -919,11 +1007,11 @@ textarea {
 }
 #footer section.locations li:first-child {
   border-bottom: 1px solid white;
-  padding: 23px 0;
+  padding: 0 0 23px 0;
 }
 #footer section.locations li:nth-child(2) {
   border-bottom: 1px solid white;
-  padding: 23px 0;
+  padding: 0 0 23px 0;
 }
 #footer section.newsletter form {
   display: flex;
@@ -945,6 +1033,10 @@ textarea {
   padding: 6px 11px;
   border: none;
 }
+#footer section.socials article {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 #footer section.socials img {
   width: 23px;
   height: 23px;
@@ -954,8 +1046,9 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  #footer section.socials {
-    display: flex;
+  #footer section.socials article {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 @media (min-width: 992px) {
@@ -963,8 +1056,9 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  #footer section.socials {
-    display: flex;
+  #footer section.socials article {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
